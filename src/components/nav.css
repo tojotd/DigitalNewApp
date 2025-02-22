@@ -1,0 +1,95 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: var(--primary-color);*/
+    background: rgb(115, 107, 107);
+    padding: var(--spacing-sm) var(--spacing-md);
+    /*box-shadow: var(--shadow-light);*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    list-style-type: none;
+  }
+  
+  /* Logo */
+  .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: var(--font-weight-bold);
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  
+  /* Navigation Links */
+  .navbar .nav-links {
+    display: flex;
+    gap: var(--spacing-lg);
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: var(--font-weight-regular);
+    padding: 8px 12px;
+    border-radius: var(--border-radius-sm);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+  }
+  
+  /* Hover effect for links */
+  .navbar .nav-links a:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
+  
+  /* Active link */
+  .navbar .nav-links a.active {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  /* Mobile menu toggle button */
+  .navbar .menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    padding: 0;
+  }
+  
+  /* Mobile view (hamburger menu) */
+  @media (max-width: 768px) {
+    .navbar .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: var(--primary-color);
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: var(--spacing-md) 0;
+    }
+  
+    .navbar .nav-links.active {
+      display: flex;
+    }
+  
+    .navbar .nav-links a {
+      width: 100%;
+      text-align: center;
+      padding: var(--spacing-sm) 0;
+    }
+  
+    .navbar .menu-toggle {
+      display: block;
+    }
+
+    .navbar-menu li {
+        display: inline;        
+    }   
+  }
+  
