@@ -19,7 +19,8 @@ export async function POST(request: Request) {
             status: 201,
         });
     } catch (error) {
-        console.error("SavedItem not working:");  
+        console.error("SavedItem not working:");}
+        {  
         return new Response(JSON.stringify({ message: 'SERVER ERROR' }), {            
             status: 500,                                                                             
         });

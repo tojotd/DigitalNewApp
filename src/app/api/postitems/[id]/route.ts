@@ -11,7 +11,8 @@ export async function GET(
     const postItem = await PostItem.findById(params.id).select('-__v');
     return Response.json(postItem);
   } catch (error) {
-    console.error("SavedItem not working:");
+    console.error("SavedItem not working:");}
+    {
     return new Response(
       JSON.stringify({ message: 'No Item Found for this ID' }),
       { status: 404 }
