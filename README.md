@@ -1,7 +1,8 @@
+
 # Digital News App
 
 ## Description
-The Digital News App is a Next.js application that serves as a digital news platform, providing users with access to various news articles and posts.
+The Digital News App is a Next.js application that serves as a digital news platform, providing users with access to various news articles and posts. Digital news application website developed in Next Js and MongoDB
 
 ## Technologies Used
 - Next.js
@@ -53,3 +54,4 @@ Contributions are welcome! Please submit a pull request or open an issue for any
 
 ## License
 This project is licensed under the MIT License.
+=======
