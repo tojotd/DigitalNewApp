@@ -3,7 +3,7 @@ import './searchForm.css';
 
 export default function SearchForm({
     active,
-    formOpen,
+    formOpen,    
 }: {
     active: boolean;
     formOpen: object | any;

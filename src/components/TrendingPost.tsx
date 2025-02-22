@@ -1,6 +1,6 @@
 import React from 'react';
 import  './trendingPost.css';
-import PostItem from '../../public/models/PostItem';
+/*import PostItem from '../../public/models/PostItem';*/
 import Link from 'next/link';
 
 export default function TrendingPost(
